@@ -8,11 +8,12 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="385dp"
-        android:layout_height="187dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="393dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="9dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/botao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,36 +21,40 @@
 
         <RadioButton
             android:id="@+id/somar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Somar" />
+            android:text="Somar"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/subtrair"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Subtrair" />
+            android:text="Subtrair"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/multiplicar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Multiplicar" />
+            android:text="Multiplicar"
+            android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/dividir"
-            android:layout_width="match_parent"
+            android:layout_width="104dp"
             android:layout_height="wrap_content"
-            android:text="Dividr" />
+            android:text="Dividr"
+            android:textSize="16sp" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/resultado"
-        android:layout_width="376dp"
-        android:layout_height="333dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="9dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="17dp"
         android:background="#000000"
         android:padding="5pt"
         android:text=". . ."
@@ -57,31 +62,30 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botao" />
 
     <Button
         android:id="@+id/botao"
-        android:layout_width="374dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="387dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="7dp"
         android:text="Executar"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/resultado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <EditText
         android:id="@+id/valor2"
         android:layout_width="392dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="2dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="11dp"
         android:ems="10"
         android:hint="Valor 2"
         android:inputType="text"
@@ -92,12 +96,12 @@
 
     <EditText
         android:id="@+id/valor1"
-        android:layout_width="392dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="391dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Valor 1"
         android:inputType="text"

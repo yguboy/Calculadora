@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             val valor2 = valor2.text.toString().toDoubleOrNull()
 
             if (valor1 != null && valor2 != null) {
-                val selectedOperation = when (radioGroup.checkedRadioButtonId) {
+                val operacaoResultado = when (radioGroup.checkedRadioButtonId) {
                     R.id.somar -> valor1 + valor2
                     R.id.subtrair -> valor1 - valor2
                     R.id.multiplicar -> valor1 * valor2
@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
                     else -> Double.NaN
                 }
 
-                resultado.text = "Resultado: $selectedOperation"
+                resultado.text = "Resultado: $operacaoResultado"
             } else {
-                resultado.text = "Valores inválidos"
+                resultado.text = "Valores inválidos!"
             }
         }
     }
