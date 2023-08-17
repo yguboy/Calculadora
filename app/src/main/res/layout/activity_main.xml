@@ -6,13 +6,103 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="385dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/botao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor2">
+
+        <RadioButton
+            android:id="@+id/somar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Somar" />
+
+        <RadioButton
+            android:id="@+id/subtrair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtrair" />
+
+        <RadioButton
+            android:id="@+id/multiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplicar" />
+
+        <RadioButton
+            android:id="@+id/dividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dividr" />
+    </RadioGroup>
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/resultado"
+        android:layout_width="376dp"
+        android:layout_height="333dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="9dp"
+        android:background="#000000"
+        android:padding="5pt"
+        android:text=". . ."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botao" />
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="1dp"
+        android:text="Executar"
+        app:layout_constraintBottom_toTopOf="@+id/resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/valor2"
+        android:layout_width="392dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Valor 2"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor1" />
+
+    <EditText
+        android:id="@+id/valor1"
+        android:layout_width="392dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Valor 1"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/valor2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
