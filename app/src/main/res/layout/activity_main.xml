@@ -23,6 +23,7 @@
             android:id="@+id/somar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="Somar"
             android:textSize="16sp" />
 
@@ -44,7 +45,7 @@
             android:id="@+id/dividir"
             android:layout_width="104dp"
             android:layout_height="wrap_content"
-            android:text="Dividr"
+            android:text="Dividir"
             android:textSize="16sp" />
     </RadioGroup>
 
@@ -81,8 +82,8 @@
 
     <EditText
         android:id="@+id/valor2"
-        android:layout_width="392dp"
-        android:layout_height="42dp"
+        android:layout_width="394dp"
+        android:layout_height="55dp"
         android:layout_marginStart="9dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="11dp"
@@ -96,8 +97,8 @@
 
     <EditText
         android:id="@+id/valor1"
-        android:layout_width="391dp"
-        android:layout_height="44dp"
+        android:layout_width="392dp"
+        android:layout_height="56dp"
         android:layout_marginStart="9dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="9dp"
